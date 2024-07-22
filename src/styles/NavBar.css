@@ -1,0 +1,149 @@
+.FullscreenNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 5.2vw;
+}
+
+.NavWrapperFullscreen {
+  display: flex;
+  gap: 4vw;
+}
+
+.NavWrapperHam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vw;
+}
+
+.NavLogo {
+  font-family: var(--header-font);
+  font-size: 80px;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.NavItem {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: var(--text-font);
+  color: var(--text-color);
+}
+
+.NavActive {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  /* could change color here too*/
+}
+
+.NavTransitioning {
+}
+
+.NavPending {
+}
+
+/** to control ham vs fullscreen nav */
+
+.HamNav {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .FullscreenNav {
+    display: none;
+  }
+
+  .HamNav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--text-color);
+  }
+
+  .HamNavContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .HamNav {
+    .NavItem,
+    .NavLogo {
+      color: var(--main-background);
+    }
+  }
+}
+
+/** for ham bars and animation */
+
+.hamClosedWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 5.2vw;
+  color: var(--text-color);
+}
+
+.hamburger {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  z-index: 9999;
+  position: absolute;
+  top: 5vw;
+  right: 5vw;
+  cursor: pointer;
+}
+
+.burgerline {
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  transform-origin: 1px;
+  transition: all 0.3s linear;
+  margin: 3px;
+}
+
+.active {
+  .burger1 {
+    transform: rotate(45deg);
+  }
+
+  .burger2 {
+    transform: translateX(100%);
+    opacity: 0;
+    width: 0;
+  }
+
+  .burger3 {
+    transform: rotate(-45deg);
+  }
+
+  .burgerline {
+    background-color: var(--main-background);
+  }
+}
+
+.inactive {
+  .burger1 {
+    transform: rotate(0);
+  }
+
+  .burger2 {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .burger3 {
+    transform: rotate(0);
+  }
+
+  .burgerline {
+    background-color: var(--text-color);
+  }
+}
