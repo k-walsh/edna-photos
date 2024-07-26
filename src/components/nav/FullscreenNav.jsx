@@ -6,7 +6,7 @@ function FullscreenNav() {
     <div className="FullscreenNav">
       <Logo />
       <div className="NavWrapperFullscreen">
-        <NavLinks />
+        <NavLinks hamburgerOpen={false} />
       </div>
     </div>
   );

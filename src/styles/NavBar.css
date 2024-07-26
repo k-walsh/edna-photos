@@ -45,7 +45,8 @@
 
 /** to control ham vs fullscreen nav */
 
-.HamNav {
+.HamNav,
+.hamClosedWrapper {
   display: none;
 }
 
@@ -75,17 +76,22 @@
       color: var(--main-background);
     }
   }
+
+  .hamClosedWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 5.2vw;
+    color: var(--text-color);
+
+    html,
+    body {
+      overflow: hidden;
+    }
+  }
 }
 
 /** for ham bars and animation */
-
-.hamClosedWrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1vw 5.2vw;
-  color: var(--text-color);
-}
 
 .hamburger {
   width: 2rem;
@@ -95,8 +101,8 @@
   flex-flow: column nowrap;
   z-index: 9999;
   position: absolute;
-  top: 5vw;
-  right: 5vw;
+  top: 45px; /* TODO: adjust based on size of edna logo */
+  right: 5.2vw; /* same as padding */
   cursor: pointer;
 }
 

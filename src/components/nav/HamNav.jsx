@@ -12,30 +12,32 @@ export default function HamNav() {
 
   return (
     <>
-      {hamburgerOpen ? (
-        <div className="HamNav">
-          <div className={`hamburger ${burgerClass}`} onClick={toggleHamburger}>
-            <div className="burgerline burger1" />
-            <div className="burgerline burger2" />
-            <div className="burgerline burger3" />
-          </div>
+      <div className={hamburgerOpen ? "HamNav" : "hamClosedWrapper"}>
+        {!hamburgerOpen && <Logo />}
+        <div className={`hamburger ${burgerClass}`} onClick={toggleHamburger}>
+          <div className="burgerline burger1" />
+          <div className="burgerline burger2" />
+          <div className="burgerline burger3" />
+        </div>
+        {hamburgerOpen && (
           <div className="HamNavContent">
             <Logo />
             <div className="NavWrapperHam">
-              <NavLinks />
+              <NavLinks
+                hamburgerOpen={hamburgerOpen}
+                setHamburgerOpen={setHamburgerOpen}
+              />
             </div>
           </div>
-        </div>
-      ) : (
-        <div className="hamClosedWrapper">
-          <Logo />
-          <div className={`hamburger ${burgerClass}`} onClick={toggleHamburger}>
-            <div className="burgerline burger1" />
-            <div className="burgerline burger2" />
-            <div className="burgerline burger3" />
-          </div>
-        </div>
-      )}
+        )}
+      </div>
+
+      <style jsx>{`
+        html,
+        body {
+          overflow: ${hamburgerOpen ? "hidden" : "visible"};
+        }
+      `}</style>
     </>
   );
 }

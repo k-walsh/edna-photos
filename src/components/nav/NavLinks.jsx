@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-function NavLinks() {
+function NavLinks({ hamburgerOpen, setHamburgerOpen }) {
   return (
     <>
       <NavLink
@@ -12,6 +12,9 @@ function NavLinks() {
             isTransitioning ? "NavTransitioning" : "",
           ].join(" ") + "NavItem"
         }
+        onClick={() => {
+          if (hamburgerOpen) setHamburgerOpen(false);
+        }}
       >
         About
       </NavLink>
@@ -24,6 +27,9 @@ function NavLinks() {
             isTransitioning ? "NavTransitioning" : "",
           ].join(" ") + "NavItem"
         }
+        onClick={() => {
+          if (hamburgerOpen) setHamburgerOpen(false);
+        }}
       >
         Work
       </NavLink>
@@ -36,6 +42,9 @@ function NavLinks() {
             isTransitioning ? "NavTransitioning" : "",
           ].join(" ") + "NavItem"
         }
+        onClick={() => {
+          if (hamburgerOpen) setHamburgerOpen(false);
+        }}
       >
         Contact
       </NavLink>
