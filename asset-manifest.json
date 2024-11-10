@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/edna-photos/static/css/main.5754dd60.css",
+    "main.js": "/edna-photos/static/js/main.6141dca8.js",
+    "index.html": "/edna-photos/index.html",
+    "main.5754dd60.css.map": "/edna-photos/static/css/main.5754dd60.css.map",
+    "main.6141dca8.js.map": "/edna-photos/static/js/main.6141dca8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5754dd60.css",
+    "static/js/main.6141dca8.js"
+  ]
+}
