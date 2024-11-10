@@ -1,0 +1,41 @@
+.contact {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  align-items: start;
+  /* background-color: aliceblue; */
+  margin: 50px 0;
+}
+
+.contact p {
+  margin: 0.5em 0;
+}
+
+.contactCol1 {
+  /* background-color: aquamarine; */
+  margin: 0;
+}
+
+.contactCol2 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  /* background-color: bisque; */
+}
+
+.workTypes {
+  max-width: 300px;
+}
+
+.contactLinks {
+  margin-top: 1.5vh;
+}
+
+.contactLinks p {
+  margin-bottom: 0.25em;
+}
+
+.icon {
+  margin-right: 2px;
+  font-weight: 200;
+}

@@ -10,7 +10,7 @@ function NavLinks({ hamburgerOpen, setHamburgerOpen }) {
             isPending ? "NavPending" : "",
             isActive ? "NavActive" : "",
             isTransitioning ? "NavTransitioning" : "",
-          ].join(" ") + "NavItem"
+          ].join(" ") + "NavItem underlinelink"
         }
         onClick={() => {
           if (hamburgerOpen) setHamburgerOpen(false);
@@ -19,19 +19,34 @@ function NavLinks({ hamburgerOpen, setHamburgerOpen }) {
         About
       </NavLink>
       <NavLink
-        to="/work"
+        to="/portfolio"
         className={({ isActive, isPending, isTransitioning }) =>
           [
             isPending ? "NavPending" : "",
             isActive ? "NavActive" : "",
             isTransitioning ? "NavTransitioning" : "",
-          ].join(" ") + "NavItem"
+          ].join(" ") + "NavItem underlinelink"
         }
         onClick={() => {
           if (hamburgerOpen) setHamburgerOpen(false);
         }}
       >
-        Work
+        Portfolio
+      </NavLink>
+      <NavLink
+        to="/projects"
+        className={({ isActive, isPending, isTransitioning }) =>
+          [
+            isPending ? "NavPending" : "",
+            isActive ? "NavActive" : "",
+            isTransitioning ? "NavTransitioning" : "",
+          ].join(" ") + "NavItem underlinelink"
+        }
+        onClick={() => {
+          if (hamburgerOpen) setHamburgerOpen(false);
+        }}
+      >
+        Projects
       </NavLink>
       <NavLink
         to="/contact"
@@ -40,7 +55,7 @@ function NavLinks({ hamburgerOpen, setHamburgerOpen }) {
             isPending ? "NavPending" : "",
             isActive ? "NavActive" : "",
             isTransitioning ? "NavTransitioning" : "",
-          ].join(" ") + "NavItem"
+          ].join(" ") + "NavItem underlinelink"
         }
         onClick={() => {
           if (hamburgerOpen) setHamburgerOpen(false);

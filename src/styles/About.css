@@ -1,0 +1,26 @@
+.profilePic {
+  width: 250px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: -12px -56px;
+  transform: scale(2.2);
+}
+
+.wrap {
+  width: 250px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.about {
+  display: flex;
+  gap: 5vw;
+  align-items: center;
+}
+
+.bio {
+  max-width: 75%;
+  padding-bottom: 30px;
+}

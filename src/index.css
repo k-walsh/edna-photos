@@ -1,7 +1,8 @@
 :root {
   /* --main-background: #c09468; */
   --main-background: #5a6e62;
-  --header-font: "sloop-script-pro";
+  --title-font: "sloop-script-pro";
+  --header-font: "Noto Serif";
   --text-font: "Inter";
   --text-color: #ded3c0;
 }
@@ -22,7 +23,7 @@ code {
 }
 
 h1 {
-  font-family: var(--header-font), sans-serif;
+  font-family: var(--title-font), sans-serif;
   font-weight: 400;
   font-style: normal;
   color: var(--text-color);
@@ -30,7 +31,7 @@ h1 {
 }
 
 h2 {
-  font-family: var(--text-font);
+  font-family: var(--header-font), serif;
   font-weight: 400;
   font-style: normal;
   color: var(--text-color);
@@ -40,4 +41,6 @@ h2 {
 p {
   font-family: var(--text-font);
   color: var(--text-color);
+  font-size: 22px;
+  font-weight: 250;
 }

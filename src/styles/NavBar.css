@@ -18,7 +18,7 @@
 }
 
 .NavLogo {
-  font-family: var(--header-font);
+  font-family: var(--title-font);
   font-size: 80px;
   text-decoration: none;
   color: var(--text-color);
@@ -152,4 +152,36 @@
   .burgerline {
     background-color: var(--text-color);
   }
+}
+
+/** for the hover animated line effect */
+
+.underlinelink {
+  position: relative;
+  /* text-decoration: none; */
+  color: var(--text-color);
+}
+
+.underlinelink:hover {
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.underlinelink::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  /* width: fit-content; */
+  height: 1.5px;
+  bottom: -1.5px;
+  left: 0;
+  background-color: var(--text-color);
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+
+.underlinelink:hover::before {
+  transform: scaleX(1);
 }

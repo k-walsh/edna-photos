@@ -1,0 +1,27 @@
+.yarl__container {
+  background-color: rgb(90, 110, 98, 0.75); /* Example: red with opacity */
+}
+
+.yarl__navigation_next,
+.yarl__navigation_prev {
+  top: 95%;
+}
+
+.yarl__navigation_next {
+  /* right: 50%; */
+  left: 60px;
+}
+
+.yarl__navigation_prev {
+  /* right: 50%; */
+  right: 60px;
+}
+
+.yarl__slide_image {
+  max-height: 90% !important;
+  margin-bottom: 20px;
+}
+
+.yarl__button {
+  filter: none;
+}

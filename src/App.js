@@ -2,8 +2,10 @@ import NavBar from "./components/nav/NavBar";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
-import Work from "./components/pages/Work";
+import Projects from "./components/pages/Projects";
+import Portfolio from "./components/pages/Portfolio";
 import Home from "./components/pages/Home";
+import "./styles/main.css";
 
 function App() {
   return (
@@ -17,7 +19,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/work" element={<Work />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </HashRouter>
     </div>
