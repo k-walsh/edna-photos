@@ -158,12 +158,9 @@
 
 .underlinelink {
   position: relative;
-  /* text-decoration: none; */
-  color: var(--text-color);
 }
 
 .underlinelink:hover {
-  color: var(--text-color);
   cursor: pointer;
 }
 
@@ -172,7 +169,6 @@
   position: absolute;
   display: block;
   width: 100%;
-  /* width: fit-content; */
   height: 1.5px;
   bottom: -1.5px;
   left: 0;
@@ -180,6 +176,10 @@
   transform: scaleX(0);
   transform-origin: top left;
   transition: transform 0.3s ease;
+
+  @media (max-width: 600px) {
+    background-color: var(--main-background);
+  }
 }
 
 .underlinelink:hover::before {

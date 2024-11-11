@@ -38,4 +38,5 @@
 .icon {
   margin-right: 2px;
   font-weight: 200;
+  color: var(--text-color);
 }
