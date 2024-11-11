@@ -4,6 +4,22 @@
 
 .yarl__button {
   width: fit-content;
+  color: var(--text-color);
+
+  p {
+    /* transition: font-weight 0.2s ease, letter-spacing 0.2s ease;
+    letter-spacing: 0px; */
+  }
+}
+
+.yarl__button:hover {
+  /* color: #fcfaf6; */
+  color: white;
+
+  p {
+    color: white;
+    /* font-weight: 400; */
+  }
 }
 
 .yarl__navigation_next,
@@ -13,7 +29,7 @@
 
 .yarl__navigation_next {
   /* left: 45%; */
-  left: calc(50vw - 16px);
+  left: calc(50vw);
 }
 
 .yarl__navigation_prev {
@@ -29,4 +45,15 @@
 
 .yarl__button {
   filter: none;
+}
+
+.slashfooter {
+  /* position: absolute;
+  bottom: 0px; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 9900099;
 }

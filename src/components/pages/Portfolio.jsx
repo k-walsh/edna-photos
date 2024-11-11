@@ -96,14 +96,19 @@ function Portfolio() {
         index={index}
         slides={photos}
         open={index >= 0}
-        closeOnBackdropClick={true}
-        controller={{ closeOnBackdropClick: true }}
+        controller={{
+          closeOnBackdropClick: true,
+          closeOnPullUp: true,
+          closeOnPullDown: true,
+        }}
         close={() => setIndex(-1)}
         render={{
           iconPrev: () => <p>prev</p>,
-          iconNext: () => <p>/&nbsp;&nbsp;next</p>,
+          iconNext: () => <p>next</p>,
         }}
       />
+
+      {index >= 0 && <p className="slashfooter">/</p>}
     </div>
   );
 }
