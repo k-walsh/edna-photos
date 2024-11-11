@@ -100,8 +100,8 @@ function Portfolio() {
         controller={{ closeOnBackdropClick: true }}
         close={() => setIndex(-1)}
         render={{
-          iconPrev: () => <p>prev / </p>,
-          iconNext: () => <p>next</p>,
+          iconPrev: () => <p>prev</p>,
+          iconNext: () => <p>/&nbsp;&nbsp;next</p>,
         }}
       />
     </div>

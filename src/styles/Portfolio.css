@@ -2,19 +2,24 @@
   background-color: rgb(90, 110, 98, 0.75); /* Example: red with opacity */
 }
 
+.yarl__button {
+  width: fit-content;
+}
+
 .yarl__navigation_next,
 .yarl__navigation_prev {
   top: 95%;
 }
 
 .yarl__navigation_next {
-  /* right: 50%; */
-  left: 60px;
+  /* left: 45%; */
+  left: calc(50vw - 16px);
 }
 
 .yarl__navigation_prev {
-  /* right: 50%; */
-  right: 60px;
+  /* left: 45%; */
+  left: calc(50vw - 91px + 16px);
+  /* calc(50vw + 40px) */
 }
 
 .yarl__slide_image {
